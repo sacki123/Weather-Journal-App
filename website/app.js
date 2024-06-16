@@ -31,7 +31,7 @@ const getweather = async ()=>{
     }
 }
 
-//
+//Send Weather information to Server API
 const addWeatherInfo = async (data)=>{
     postData.date = newDate;
     postData.temp = data.main.temp;
@@ -53,6 +53,7 @@ const addWeatherInfo = async (data)=>{
     }
 }
 
+//Get Weather information from Server API
 const getWeatherInfo = async (url="")=>{
     const responseGetWeather = await fetch(url);
     try {
@@ -66,6 +67,7 @@ const getWeatherInfo = async (url="")=>{
     }
 }
 
+//Main Function
 function getWeatherbyzipcode(){
     init();
     getweather()
