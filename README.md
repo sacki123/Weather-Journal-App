@@ -12,7 +12,7 @@ This project requires you to create an asynchronous web app that uses Web API an
 - npm install cors
 # Run command to start server
 - npm start
-Or
+- Or
 - node server.js
 
 ## Instructions
